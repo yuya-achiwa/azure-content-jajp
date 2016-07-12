@@ -114,6 +114,10 @@ Azure BLOB Storage では、ブロック BLOB とページ BLOB がサポート�
 
 ファイルをブロック blob にアップロードするには、コンテナーの参照を取得し、それを使用してブロック blob の参照を取得します。BLOB の参照を取得したら、**upload\_from\_stream** メソッドを呼び出すことによって、データの任意のストリームを BLOB にアップロードできます。この操作により、BLOB がまだ存在しない場合は作成され、存在する場合は上書きされます。次の例は、BLOB をコンテナーにアップロードする方法を示しています。この例では、既にコンテナーが作成されていることを前提としています。
 
+	#include "was/storage_account.h"
+	#include "was/blob.h"
+	#include "cpprest\filestream.h"
+
 	// Retrieve storage account from connection string.
 	azure::storage::cloud_storage_account storage_account = azure::storage::cloud_storage_account::parse(storage_connection_string);
 
