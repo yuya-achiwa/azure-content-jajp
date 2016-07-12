@@ -44,7 +44,7 @@ Visual Studio で、新しい Windows コンソール アプリケーション�
 Program.cs ファイルの先頭に、次の **using** ステートメントを追加します。
 
     using System.IO;    
-    using Microsoft.WindowsAzure;
+    using Microsoft.Azure;
     using Microsoft.WindowsAzure.Storage;
     using Microsoft.WindowsAzure.Storage.Blob;
 
